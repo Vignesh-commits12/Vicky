@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function add(){
+            a=document.getElementById("hii").value;
+            b=document.getElementById("hee").value;
+            c=parseInt(a)+parseInt(b);
+            window.alert("The answer is : " +c);
+            
+            
+        }
+        function sub(){
+            a=document.getElementById("hii").value;
+            b=document.getElementById("hee").value;
+            c=parseInt(a)-parseInt(b);
+            window.alert("The answer is : " +c);
+        }
+        function mul()
+        {
+            a=document.getElementById("hii").value;
+            b=document.getElementById("hee").value;
+            c=parseInt(a)*parseInt(b);
+            window.alert("The answer is : " +c);
+        }
+        function div()
+        {
+            a=document.getElementById("hii").value;
+            b=document.getElementById("hee").value;
+            c=parseInt(a)/parseInt(b);
+            window.alert("The answer is : " +c);  
+            
+
+        }
+
+        
+    </script>
+</head>
+<body>
+    <form>
+        <label> Enter first number</label>
+        <input type="text" id="hii"><br><br>
+        <label> Enter second number</label>
+        <input type="text" id="hee"><br><br>
+
+        <input type="button" value="add" onclick="add()">
+        <input type="button" value="sub" onclick="sub()">
+        <input type="button" value="mul" onclick="mul()">
+        <input type="button" value="mul" onclick="div()">
+
+    </form>
+</body>
+</html>
